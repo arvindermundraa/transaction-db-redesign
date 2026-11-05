@@ -1,0 +1,35 @@
+{
+  "postgres": "17.5",
+  "transactions_after_runs": 1050000,
+  "accounts": 50000,
+  "batch_size": 10000,
+  "runs": 5,
+  "partitions": 37,
+  "load_seconds": 11.2,
+  "sync_ms": {
+    "legacy_median": 581.0,
+    "redesign_median": 129.5,
+    "legacy_all": [
+      581.0,
+      650.6,
+      566.2,
+      579.1,
+      709.8
+    ],
+    "redesign_all": [
+      199.9,
+      61.7,
+      170.9,
+      78.8,
+      129.5
+    ]
+  },
+  "sync_latency_reduction_pct": 77.7,
+  "statement_ms": {
+    "legacy_median": 45.38,
+    "redesign_median": 0.13
+  },
+  "statement_latency_reduction_pct": 99.7,
+  "balance_mismatches": 0,
+  "reconciliation_drift_rows": 0
+}
